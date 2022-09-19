@@ -27,12 +27,11 @@
     <section>
         <div class="container">
             <h1 class="py-4">Lista dei film</h1>
-            <div class="row g-5 flex-wrap">
+            <div class="row g-5 d-flex ">
                 @foreach($movies as $movie)
                 <div class="col">
-
                     <div class="card" style="width: 18rem;">
-                        <div class="card-header"> Titolo:{{ $movie->title }}</div>
+                        <div class="card-header fw-bold"> Titolo: {{ $movie->title }}</div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Titolo originale: {{ $movie->original_title }}</li>
                             <li class="list-group-item">Nazionalità: {{ $movie->nationality }}</li>
